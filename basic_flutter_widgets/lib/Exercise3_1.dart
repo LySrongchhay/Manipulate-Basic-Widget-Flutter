@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class Exercise3_1 extends StatelessWidget {
+  const Exercise3_1({super.key});
+
   @override
   Widget build(Object context) {
     return Container(
@@ -22,7 +25,8 @@ class CustomCard extends StatelessWidget {
   final Color color;
   final String text;
 
-   CustomCard({required this.text, this.color = Colors.blue});
+  const CustomCard({super.key, required this.text, this.color = Colors.blue});
+
 
   @override
   Widget build(BuildContext context) {
